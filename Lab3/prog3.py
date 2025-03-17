@@ -1,0 +1,12 @@
+n=int(input("Enter a number n"))
+prev=0
+i=1
+next=1
+print(prev,end=" ")
+print(next,end=" ")
+while(i<=n-2):
+    temp=prev
+    prev=next
+    next=prev+temp
+    print(next,end=" ")
+    i+=1
